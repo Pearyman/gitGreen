@@ -11,7 +11,7 @@
 			var fs=require('fs');
 			var child_process=require('child_process');
 			// var currentTime=parseInt(new Date().getTime().toString().substr(0,10));
-			var currentTime=1413000726;
+			var currentTime=1411963926;
 			var lastTime=currentTime-365*24*60*60;
 			setInterval(function(){
 				currentTime=parseInt(currentTime-86400);
