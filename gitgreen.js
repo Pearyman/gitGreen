@@ -11,7 +11,7 @@
 			var fs=require('fs');
 			var child_process=require('child_process');
 			// var currentTime=parseInt(new Date().getTime().toString().substr(0,10));
-			var currentTime=1422418326;
+			var currentTime=1421899926;
 			var lastTime=currentTime-365*24*60*60;
 			setInterval(function(){
 				currentTime=parseInt(currentTime-86400);
@@ -21,7 +21,7 @@
 			 	}else{
 			 		console.log('write succeed');
 			 		console.log(currentTime);
-			 		child_process.exec("git add .; GIT_AUTHOR_DATE='" + currentTime + "' GIT_COMMITTER_DATE='" + currentTime + "' git commit -m 'update'; git push origin master;",function(err,opt){
+			 		child_process.exec("git add .; GIT_AUTHOR_DATE='" + currentTime + "' GIT_COMMITTER_DATE='" + currentTime + "' git commit -m 'update'; git push;",function(err,opt){
 			 			if(err) throw err;
 			 			console.log("done!!");
 			 		})
@@ -29,7 +29,7 @@
 
 			 })
 
-			},12000);
+			},30000);
 			
 		 	
  
