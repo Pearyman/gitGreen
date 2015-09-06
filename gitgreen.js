@@ -18,21 +18,26 @@
 		 		console.log('write failed!');
 		 	}else{
 		 		console.log('write succeed');
-		 		var doit=child_process.spawn("doit",["git add .","GIT_AUTHOR_DATE='" + currentTime + "' GIT_COMMITTER_DATE='" + currentTime + "'git commit -m 'test'","git push origin master"]);
+		 		// var doit=child_process.spawn("doit",["git add .","GIT_AUTHOR_DATE='" + currentTime + "' GIT_COMMITTER_DATE='" + currentTime + "'git commit -m 'test'","git push origin master"]);
 
-		 		doit.stdout.on('data', function (data) {
-				    console.log('stdout: ' + data);
-				});
-				doit.stderr.on('data', function (data) {
-				    console.log('stderr: ' + data);
-				});
-				doit.on('exit', function (code) {
-				    console.log('child process exited with code ' + code);
-				});
-		 		// child_process.exec("git add .; GIT_AUTHOR_DATE='" + currentTime + "' GIT_COMMITTER_DATE='" + currentTime + "'git commit -m 'test'; git push origin master;",function(err,opt){
-		 		// 	if(err) throw err;
-		 		// 	console.log("done!!");
-		 		// })
+		 	// 	doit.stdout.on('data', function (data) {
+				//     console.log('stdout: ' + data);
+				// });
+				// doit.stderr.on('data', function (data) {
+				//     console.log('stderr: ' + data);
+				// });
+				// doit.on('exit', function (code) {
+				//     console.log('child process exited with code ' + code);
+				// });
+		 		child_process.exec("git add .;git push origin master;",function(err,opt){
+		 			// if(err) throw err;
+		 			child_process.exec("GIT_AUTHOR_DATE='" + currentTime + "' GIT_COMMITTER_DATE='" + currentTime + "'git commit -m 'test';",function(err,opt){
+			 				child_process.exec("git push origin master",function(){
+			 					console.log("done!!");
+			 				})
+		 			})
+		 			// 
+		 		})
 		 	}
 
 		 })
