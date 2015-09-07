@@ -19,6 +19,7 @@
 			 	}else{
 			 		currentTime=currentTime-24*3600;
 			 		console.log('write succeed');
+			 		console.log(currentTime);
 			 		child_process.exec("git add .; GIT_AUTHOR_DATE='" + currentTime + "' GIT_COMMITTER_DATE='" + currentTime + "';git commit -m 'update'; git push origin master;",function(err,opt){
 			 			if(err) throw err;
 			 			console.log("done!!");
