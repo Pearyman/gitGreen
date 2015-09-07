@@ -17,7 +17,7 @@
 			 	if(err){
 			 		console.log('write failed!');
 			 	}else{
-			 		var pushTime=currentTime-24*3600;
+			 		var pushTime=parseInt(currentTime-86400);
 			 		console.log('write succeed');
 			 		console.log(pushTime);
 			 		child_process.exec("git add .; GIT_AUTHOR_DATE='" + pushTime + "' GIT_COMMITTER_DATE='" + pushTime + "';git commit -m 'update'; git push origin master;",function(err,opt){
