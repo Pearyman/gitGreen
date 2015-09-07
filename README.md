@@ -4,10 +4,14 @@ Let me make your github all green.
 ###使用方法
 
 1,本地安装Node环境，git建立一个gitgreen的项目.
+
+2,
 <code>
-2,node gitgreen.js
+node gitgreen.js
 </code>
+
 注：由于网速的不尽相同，所以每个人设置的时间阀值也不相同。
+
 ###1,这基本是不可能的
 
 写的原因竟是看到知乎上的一个问题 [在Github上保持365天全绿是怎样一种体验](http://www.zhihu.com/question/34043434);
