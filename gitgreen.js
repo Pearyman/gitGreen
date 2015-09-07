@@ -12,10 +12,12 @@
 			var child_process=require('child_process');
 			var currentTime=parseInt(new Date().getTime().toString().substr(0,10));
 			var lastTime=currentTime-365*24*60*60;
-			fs.writeFile('gitgreen.txt',currentTime,function(err){
+			setInterval(function(){
+				fs.writeFile('gitgreen.txt',currentTime,function(err){
 			 	if(err){
 			 		console.log('write failed!');
 			 	}else{
+			 		currentTime=currentTime-24*3600;
 			 		console.log('write succeed');
 			 		child_process.exec("git add .; GIT_AUTHOR_DATE='" + currentTime + "' GIT_COMMITTER_DATE='" + currentTime + "';git commit -m 'update'; git push origin master;",function(err,opt){
 			 			if(err) throw err;
@@ -25,5 +27,7 @@
 
 			 })
 
+			},10000);
+			
 		 	
  
