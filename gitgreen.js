@@ -31,7 +31,7 @@
 				// });
 		 		child_process.exec("git add .;git push origin master;",function(err,opt){
 		 			// if(err) throw err;
-		 			child_process.exec("GIT_AUTHOR_DATE='" + currentTime + "' GIT_COMMITTER_DATE='" + currentTime + "'git commit -m 'test';",function(err,opt){
+		 			child_process.exec("GIT_AUTHOR_DATE='" + currentTime + "' GIT_COMMITTER_DATE='" + currentTime + "'git commit -m 'new test';",function(err,opt){
 			 				child_process.exec("git push origin master",function(){
 			 					console.log("done!!");
 			 				})
