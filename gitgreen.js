@@ -19,7 +19,7 @@
 		 	}else{
 		 		console.log('write succeed');
 
-		 		child_process.exec("git add -A;GIT_AUTHOR_DATE='" + currentTime + "' GIT_COMMITTER_DATE='" + currentTime + "'git commit -m 'update'; git push;",function(err,opt){
+		 		child_process.exec("git add -A;GIT_AUTHOR_DATE='" + currentTime + "' GIT_COMMITTER_DATE='" + currentTime + "   'git commit -m 'update'; git push;",function(err,opt){
 		 			if(err) throw err;
 		 			console.log("done!!");
 		 		})
