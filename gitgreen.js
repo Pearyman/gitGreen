@@ -30,6 +30,7 @@
 					},40000);
 			if(currentTime==lastTime){
 				clearInterval(push);
+				console.log("finish!!!")
 			}
 			
 		 	
