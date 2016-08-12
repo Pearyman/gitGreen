@@ -1,5 +1,5 @@
 /*
- * Developer : Yanan Li (liyananhappy@hotmail.com)
+ * Developer : Pearyman (pearyman@gmail.com)
  * Date : 06/09/2015
  *
  * Copyright 2015
