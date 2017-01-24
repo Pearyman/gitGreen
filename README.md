@@ -1,6 +1,12 @@
 # gitGreen
 Let me make your github all green.
 
+[![GitHub issues](https://img.shields.io/github/issues/Pearyman/gitGreen.svg)](https://github.com/Pearyman/gitGreen/issues)
+[![GitHub forks](https://img.shields.io/github/forks/Pearyman/gitGreen.svg)](https://github.com/Pearyman/gitGreen/network)
+[![GitHub stars](https://img.shields.io/github/stars/Pearyman/gitGreen.svg)](https://github.com/Pearyman/gitGreen/stargazers)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/Pearyman/gitGreen/master/LICENSE)
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/Pearyman/gitGreen.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D)
+
 ###使用方法
 
 1,本地安装Node环境，git建立一个gitgreen的项目.
