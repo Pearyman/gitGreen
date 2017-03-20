@@ -7,7 +7,7 @@ Let me make your github all green.
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/Pearyman/gitGreen/master/LICENSE)
 [![Twitter](https://img.shields.io/twitter/url/https/github.com/Pearyman/gitGreen.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D)
 
-###使用方法
+### 使用方法
 
 1,本地安装Node环境，git建立一个gitgreen的项目.
 
@@ -18,13 +18,13 @@ node gitgreen.js
 
 注：由于网速的不尽相同，所以每个人设置的时间阀值也不相同。
 
-###1,这基本是不可能的
+### 1,这基本是不可能的
 
 写的原因竟是看到知乎上的一个问题 [在Github上保持365天全绿是怎样一种体验](http://www.zhihu.com/question/34043434);
 
 ![alt text](gitgreen.jpg)
 
-###2,这真的不太可能
+### 2,这真的不太可能
 
 以前曾最多坚持过连续3个月，连续push了90多天。后来想想，其实有些都是周六周天做的一些无用功罢了。
 
@@ -32,7 +32,7 @@ node gitgreen.js
 
 其实是根本不会计较这些东西的。
 
-###最后
+### 最后
 
 希望大家能够在enjoy coding的同时，多关心关心你周围的人。
 
